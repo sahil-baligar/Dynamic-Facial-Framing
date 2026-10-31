@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dynamic-facial-framing"
+version = "2.0.0"
+description = "Horizontal video to vertical 9:16 with dynamic face tracking, active-speaker framing and gameplay + facecam layouts"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.24", "opencv-python>=4.8"]
+
+[project.optional-dependencies]
+mediapipe = ["mediapipe>=0.10.14"]
+
+[project.scripts]
+dff = "dynamic_facial_framing.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["dynamic_facial_framing*"]

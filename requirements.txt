@@ -1,3 +1,3 @@
-opencv-python>=4.8.0
-numpy>=1.24.0
-mediapipe>=0.10.0
+numpy>=1.24
+opencv-python>=4.8
+mediapipe>=0.10.14   # optional but recommended: mouth opening + 52 blendshapes (speaker and expression detection). Without it, YuNet gives boxes only.
